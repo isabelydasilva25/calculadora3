@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Solução do Calculo da Prestação de Financiamento</h1>
-    <input type="number" id="taxa" placeholder="digite o valor financiado"><br>
+    <div class="calcular">
+        <h1>Solução do Calculo da Prestação de Financiamento</h1>
+        <input type="number" name="" id="valor" placeholder="digite o valor financiado"><br>
+        <input type="number" name="" id="taxa" placeholder="digite a taxa de juros mensal"><br>
+        <input type="number" name="" id="parcela" placeholder="digite o numero de parcelas"><br>
+        <button onclick="calcular()">Calcular Prestação</button><br>
+          <h1>Tabela</h1>
 
-    <input type="number" id="taxa" placeholder="digite a taxa de juros mensal"><br>
-
-    <input type="number" id="taxa" placeholder="digite o numero de parcelas"><br>
-
-    <button onclick="calcularPrestacao()">Calcular Prestação</button>
-
-
-    <h2>Resposta</h2>
-    <span id="res_1"></span><br>
-    <span id="res_2"></span><br>
-
+          <table id="tabela">
+             <thead>
+                 <tr>
+                     <th>parcela</th>
+                     <th>valor</th>
+                 </tr>
+             </thead>
+    </div>
+         <tbody>
+         </tbody>
+        </table>
     <script src="script.js"></script>
 </body>
 </html>
